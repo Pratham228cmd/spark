@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(img/spencer-watson-dEOC8M_lmxI-unsplash.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+a {
+	color: #ffffff;
+	border-bottom: 2px solid transparent;
+	font-size: 1.5rem;
+}
+
+.sticky-top a:hover {
+	border-bottom: 2px solid #a8ff04;
+}
+
+.main-section,
+.secondary-section,
+.about-us-section {
+	height: 90vh;
+}
+
+.main-text {
+	font-size: 8rem;
+}
+
+.secondary-text {
+	font-size: 2rem;
+}
+
+.secondary-section {
+	background-color: #a8ff04;
+	color: #000000;
+}
+
+.secondary-section-main-text {
+	margin: 2rem 0;
+	font-size: 5rem;
+}
+
+.secondary-section ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.secondary-section li {
+	flex: 1;
+	font-size: 1.5rem;
+	list-style-type: none;
+}
+
+.about-us-text {
+	font-size: 1.5rem;
+	padding: 0 2rem;
+}
+
+#contact-us {
+	background-color: #a8ff04;
+	/* color: #000000; */
+}
+
+.links > a {
+	padding: 0 20px;
+	text-decoration: none;
+}
+
+.links > a {
+	border-right: 1px solid #ffffff;
+}
+
+.links > a:last-child {
+	border-right: none;
+}
+
+@media screen and (max-width: 576px) {
+	.main-text {
+		font-size: 4rem;
+	}
+
+	.secondary-text {
+		font-size: 2rem;
+	}
+
+	.secondary-section-main-text {
+		padding: 0 0.5rem;
+		font-size: 2.5rem;
+	}
+	.secondary-section-secondary-text ul {
+		flex-direction: column;
+	}
+
+	.secondary-section-secondary-text li {
+		list-style-type: disc;
+	}
+}
